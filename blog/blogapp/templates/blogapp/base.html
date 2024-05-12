@@ -13,7 +13,9 @@
             {% block content %}{% endblock %}
         </div>
         <div id="sidebar">
-            <h2>My blog</h2>
+            <h2>
+                <a href="{% url "blogapp:post_list" %}">My Blog</a>
+            </h2>
             <p>This is my blog.</p>
             <p>I have written {% total_posts %} posts so far.</p>
             <h3>Latest posts</h3>
